@@ -1,0 +1,72 @@
+:root {
+  color-scheme: light;
+  --bg: #f8f9ff;
+  --body-bg: #ffffff;
+  --surface: #ffffff;
+  --surface-strong: #eef2ff;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --border: #e5e7eb;
+  --border-strong: #dfe4f4;
+  --accent: #1a1a6e;
+  --accent-soft: rgba(26, 26, 110, 0.08);
+  --shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+  --card-shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+  --icon-bg: #eef2ff;
+  --success-bg: #f0fdf4;
+  --success-border: #86efac;
+  --success-text: #166534;
+  --header-bg: rgba(255, 255, 255, 0.88);
+  --nav-pill-bg: rgba(0, 0, 0, 0.05);
+  --nav-pill-border: rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #020617;
+  --body-bg: #0b1220;
+  --surface: #111827;
+  --surface-strong: #1f2937;
+  --text: #e2e8f0;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --border-strong: #475569;
+  --accent: #8b5cf6;
+  --accent-soft: rgba(139, 92, 246, 0.08);
+  --shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+  --card-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  --icon-bg: rgba(255, 255, 255, 0.08);
+  --success-bg: #052f10;
+  --success-border: #059669;
+  --success-text: #a7f3d0;
+  --header-bg: rgba(6, 14, 32, 0.88);
+  --nav-pill-bg: rgba(255, 255, 255, 0.06);
+  --nav-pill-border: rgba(255, 255, 255, 0.08);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--body-bg);
+  color: var(--text);
+  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+a,
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+}
